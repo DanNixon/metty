@@ -1,0 +1,11 @@
+[package]
+name = "metty"
+version = "2024.3.0"
+edition = "2021"
+
+[dependencies]
+ascii_table = { version = "4.0.3", features = ["color_codes"] }
+cadmium-yellow = "2024.3.2"
+clap = { version = "~4.4.0", features = ["derive", "env"] }
+colored = "2.1.0"
+tokio = { version = "1.36.0", features = ["macros", "rt-multi-thread"] }
