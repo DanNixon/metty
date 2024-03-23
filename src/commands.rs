@@ -86,7 +86,7 @@ pub(crate) async fn print_times(client: &Client, args: TimesArgs) -> crate::Resu
         vec![
             String::default(),
             format!(
-                "Platfrom {}, for trains {}",
+                "Platform {}, for trains {}",
                 platform.number, platform.help_text
             ),
         ],
