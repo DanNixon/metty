@@ -1,6 +1,6 @@
 [package]
 name = "metty"
-version = "2024.3.0"
+version = "2024.3.1"
 
 description = "A CLI tool for getting real time information about the Tyne and Wear Metro"
 readme = "README.md"
