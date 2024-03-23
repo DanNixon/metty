@@ -41,13 +41,14 @@ pub(crate) fn format_line_name(v: &LineName) -> String {
 
 pub(crate) fn format_last_seen(v: &TrainEvent) -> String {
     format!(
-        "{} {}",
+        "{} {} at {}",
         match v.kind {
             TrainEventKind::Approaching => "Approaching",
             TrainEventKind::Arrived => "Arrived at",
             TrainEventKind::ReadyToStart => "Departing from",
             TrainEventKind::Departed => "Departed from",
         },
-        v.location
+        v.location,
+        v.time.format("%H:%M")
     )
 }
