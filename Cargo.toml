@@ -10,6 +10,9 @@ repository = "https://github.com/DanNixon/metty"
 
 license = "MIT"
 
+categories = ["command-line-utilities"]
+keywords = ["real-time-information", "nexus", "tyne-and-wear-metro", "cli", "command-line"]
+
 edition = "2021"
 
 [dependencies]
