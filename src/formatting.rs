@@ -19,6 +19,7 @@ pub(crate) fn table_basic() -> AsciiTable {
         .column(3)
         .set_header("Last Seen")
         .set_align(Align::Left);
+    table.column(4).set_header("Train").set_align(Align::Left);
 
     table
 }
