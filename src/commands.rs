@@ -109,6 +109,7 @@ pub(crate) async fn print_times(client: &Client, args: TimesArgs) -> crate::Resu
                 crate::formatting::format_line_name(&train.line),
                 train.destination,
                 crate::formatting::format_last_seen(&train.last_event),
+                train.id,
             ]
         })
         .collect();
