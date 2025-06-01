@@ -13,7 +13,7 @@ license = "MIT"
 categories = ["command-line-utilities"]
 keywords = ["nexus", "tyne-and-wear-metro", "cli", "command-line"]
 
-edition = "2021"
+edition = "2024"
 
 [dependencies]
 ascii_table = { version = "4.0.7", features = ["color_codes"] }
