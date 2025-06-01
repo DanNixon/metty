@@ -16,9 +16,9 @@ keywords = ["nexus", "tyne-and-wear-metro", "cli", "command-line"]
 edition = "2021"
 
 [dependencies]
-ascii_table = { version = "=4.0.5", features = ["color_codes"] }
+ascii_table = { version = "4.0.7", features = ["color_codes"] }
 cadmium-yellow = "2024.3.2"
-clap = { version = "~4.4.0", features = ["derive", "env"] }
-clap_complete = "~4.4.0"
+clap = { version = "4.5.39", features = ["derive", "env"] }
+clap_complete = "4.5.52"
 colored = "3.0.0"
 tokio = { version = "1.44.2", features = ["macros", "rt-multi-thread"] }
