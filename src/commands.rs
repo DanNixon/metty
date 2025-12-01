@@ -44,7 +44,7 @@ pub(crate) async fn print_line(client: &Client, args: LineArgs) -> crate::Result
         format!("{} line", crate::formatting::format_line_name(&line.name)),
     ]];
 
-    AsciiTable::default().print(data);
+    AsciiTable::default().println(data);
 
     let data: Vec<Vec<String>> = line
         .stations
@@ -52,7 +52,7 @@ pub(crate) async fn print_line(client: &Client, args: LineArgs) -> crate::Result
         .map(|s| vec![s.clone(), station_names[&s].clone()])
         .collect();
 
-    AsciiTable::default().print(data);
+    AsciiTable::default().println(data);
 
     Ok(())
 }
@@ -92,7 +92,7 @@ pub(crate) async fn print_times(client: &Client, args: TimesArgs) -> crate::Resu
         ],
     ];
 
-    AsciiTable::default().print(data);
+    AsciiTable::default().println(data);
 
     // Get arrivals
     let trains = client
@@ -114,7 +114,7 @@ pub(crate) async fn print_times(client: &Client, args: TimesArgs) -> crate::Resu
         })
         .collect();
 
-    crate::formatting::table_basic().print(data);
+    crate::formatting::table_basic().println(data);
 
     Ok(())
 }
