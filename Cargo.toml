@@ -20,5 +20,5 @@ ascii_table = { version = "5.0.0", features = ["color_codes"] }
 cadmium-yellow = "2024.3.2"
 clap = { version = "4.5.39", features = ["derive", "env"] }
 clap_complete = "4.5.52"
-colored = "3.0.0"
-tokio = { version = "1.48.0", features = ["macros", "rt-multi-thread"] }
+colored = "3.1.1"
+tokio = { version = "1.49.0", features = ["macros", "rt-multi-thread"] }
